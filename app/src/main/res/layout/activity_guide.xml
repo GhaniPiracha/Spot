@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:paddingLeft="0dp"
-    android:paddingTop="0dp"
-    android:paddingRight="0dp"
-    android:paddingBottom="0dp"
     tools:context=".Guide"
-
     tools:layout_editor_absoluteY="89dp">
 
-
-    <me.biubiubiu.justifytext.library.JustifyTextView
-        android:id="@+id/textView"
+    <include
+        layout="@layout/content_guide"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-
-
-        app:fontFamily="cursive"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
+        android:layout_height="match_parent"
+        />
 
     <android.support.design.widget.NavigationView
-        android:id="@+id/navigation_view"
+        android:id="@+id/navigation_view_guide"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/navigation_menu"
@@ -41,4 +23,5 @@
 
     </android.support.design.widget.NavigationView>
 
-</android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -5,13 +5,14 @@ import android.content.Intent;
         import android.support.design.widget.NavigationView;
         import android.support.design.widget.NavigationView.OnNavigationItemSelectedListener;
         import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+        import android.support.v7.app.ActionBarDrawerToggle;
+        import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.MenuItem;
         import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements OnNavigationItemSelectedListener {
+
     private DrawerLayout mdrawerlayout;
     private ActionBarDrawerToggle mtoggle;
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements OnNavigationItemS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mdrawerlayout=(DrawerLayout) findViewById(R.id.drawer);
-        mtoggle=new ActionBarDrawerToggle(this,mdrawerlayout,R.string.Open,R.string.Close);
+        mtoggle = new ActionBarDrawerToggle(this,mdrawerlayout,R.string.Open,R.string.Close);
         mdrawerlayout.addDrawerListener(mtoggle);
         mtoggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
