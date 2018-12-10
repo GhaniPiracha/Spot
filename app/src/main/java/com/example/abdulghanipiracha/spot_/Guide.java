@@ -44,6 +44,28 @@ public class Guide extends AppCompatActivity implements OnNavigationItemSelected
                 startActivity(intent);
             }
         });
+
+        Button arms = findViewById(R.id.buttonforarms);
+        arms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Guide.this, YoutubePlayer.class);
+                intent.putExtra("video", "CzhMgdWdMjg");
+                startActivity(intent);
+            }
+        });
+
+        Button legs = findViewById(R.id.buttonforlegs);
+        legs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Guide.this, YoutubePlayer.class);
+                intent.putExtra("video", "LHcnpP2KVDM");
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
