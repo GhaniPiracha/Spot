@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Spot_</string>
+    <string name="app_name">Spot</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>>
+    <string name="Height">Height (m)</string>
+    <string name="weight">Weight(kg)</string>
+    <string name="CalculateBMI">Calculate BMI</string>
+    <string name="enter">Calc</string>
 </resources>

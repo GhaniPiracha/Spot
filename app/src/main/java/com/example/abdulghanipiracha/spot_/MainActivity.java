@@ -55,11 +55,11 @@ public class MainActivity extends AppCompatActivity implements OnNavigationItemS
             startActivity(intent);
 
         }
-        if(id == R.id.nav_map) {
-            Intent intent = new Intent(this, Map.class);
-            startActivity(intent);
-
-        }
+//        if(id == R.id.nav_map) {
+//            Intent intent = new Intent(this, Map.class);
+//            startActivity(intent);
+//
+//        }
         if(id == R.id.home) {
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

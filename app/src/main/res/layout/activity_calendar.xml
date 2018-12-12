@@ -6,8 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Calendar"
     android:id="@+id/drawer"
-    android:background="@drawable/calendar_icon"
     tools:layout_editor_absoluteY="81dp">
+
+    <include
+        layout="@layout/activity_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 
     <android.support.design.widget.NavigationView
@@ -18,5 +23,6 @@
         android:layout_gravity="start">
 
     </android.support.design.widget.NavigationView>
+
 
 </android.support.v4.widget.DrawerLayout>
