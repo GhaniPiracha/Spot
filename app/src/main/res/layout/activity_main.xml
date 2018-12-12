@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:id = "@+id/drawer"
     tools:layout_editor_absoluteY="81dp"
-    android:background="@drawable/b">
+    android:background="@drawable/c">
 
     <android.support.design.widget.NavigationView
         android:id="@+id/navigation_view"
